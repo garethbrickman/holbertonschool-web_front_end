@@ -1,0 +1,13 @@
+for i in "$@"
+do
+    echo "~~~~~~~~~~~ w3c validation for $i ~~~~~~~~~~~"
+    mime=$(file --mime-type "$i" | cut -d: -f2 | grep -v "cannot open")
+    if [ -z $mime ]
+    then
+        echo "file $i nonexistent"
+        echo ""
+    else
+        curl -H "Content-Type: $mime; charset=utf-8" --data-binary @"$i" https://validator.w3.org/nu/?out=gnu
+        echo ""
+    fi
+done
