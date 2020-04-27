@@ -31,7 +31,7 @@
   --section-title-color: var(--color-black);
 }
 
-.box {
+* {
   box-sizing: border-box;
 }
 
