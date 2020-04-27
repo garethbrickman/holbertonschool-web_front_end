@@ -37,6 +37,10 @@ html {
   font-size: 62.5%;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
