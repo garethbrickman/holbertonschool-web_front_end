@@ -197,6 +197,7 @@ ul.footer {
 }
 
 .row::after {
+  content: none;
   display: table-row;
   clear: both;
 }
