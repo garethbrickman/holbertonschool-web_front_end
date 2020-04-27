@@ -198,7 +198,7 @@ ul.footer {
   clear: both;
 }
 
-*.col- {
+[class^="col-"] {
   float: left;
   padding: 0.5rem;
 }
