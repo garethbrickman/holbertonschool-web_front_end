@@ -31,14 +31,13 @@
   --section-title-color: var(--color-black);
 }
 
-html {
+*, *:before, *:after {
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-size: 62.5%;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
