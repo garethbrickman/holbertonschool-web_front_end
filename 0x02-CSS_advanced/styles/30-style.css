@@ -352,12 +352,20 @@ ul.footer {
 }
 
 .card-work .card-title {
+  text-align: center;
+  margin: 0;
+  opacity: 0.1;
+  height: 100%;
+  position: relative;
+}
+
+.card-work .card-title a {
   display: block;
   text-decoration: none;
   padding-top: 45%;
 }
 
-.card-work .card-title::after {
+.card-work .card-title::after a {
   position: absolute;
   top: 0;
   right: 0;
