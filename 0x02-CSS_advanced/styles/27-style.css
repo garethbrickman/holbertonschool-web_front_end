@@ -280,9 +280,7 @@ ul.footer {
 }
 
 .section-hero {
-  background-size: auto auto;
-  height: auto;
-  width: 90rem;
+  background-size: 90em auto;
 }
 
 .section-hero .section-title {
