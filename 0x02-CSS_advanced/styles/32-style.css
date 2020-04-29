@@ -110,6 +110,7 @@ a:active {
 .button {
   display: var(--button-display);
   padding: var(--button-padding);
+  border: var(--button-border);
   font-size: var(--button-font-size);
   color: var(--button-color);
   text-decoration: var(--button-text-decoration);
@@ -118,7 +119,7 @@ a:active {
 .button:hover {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
-  background-color: var(--button-hover-background);
+  background: var(--button-hover-background);
   transition-duration: var(--transition-duration);
   transition-property: color, background-color;
 }
@@ -240,7 +241,7 @@ ul.row {
   color: var(--text-color);
 }
 
-ul.footer {
+.footer ul {
   text-align: right;
 }
 
@@ -302,12 +303,12 @@ ul.footer {
 
 .card-testimonial .card-quote cite {
   display: block;
-  padding: 1rem;
+  padding-top: 1rem;
   color: var(--color-primary);
 }
 
 .section-hero {
-  background-size: 90em auto;
+  background-size: 90rem auto;
 }
 
 .section-hero .section-title {
@@ -333,7 +334,7 @@ ul.footer {
   left: var(--header-logo-link-left);
 }
 
-.car-work .card-outer {
+.card-work .card-outer {
   position: relative;
   overflow: hidden;
 }
