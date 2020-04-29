@@ -327,7 +327,7 @@ ul.footer {
   left: var(--header-logo-link-left);
 }
 
-.car-work .card-outer {
+.card-work .card-outer {
   position: relative;
   overflow: hidden;
 }
