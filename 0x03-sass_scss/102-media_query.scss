@@ -10,7 +10,7 @@ h1 {
     }
     @media screen and (max-width: 320px) {
             font-size: 14px;
-            h1.small {
+            &.small {
                 color: #1D1D1D;;
             }
     }
