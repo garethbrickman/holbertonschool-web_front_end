@@ -1,0 +1,27 @@
+/* extend style */
+
+%font-size {
+    font-size: 12px;
+}
+
+%color1 {
+    color:  #00FF00;
+}
+
+%color2 {
+    color: #FF0000;
+}
+
+.info {
+    @extend %font-size;
+}
+
+.success {
+    @extend %font-size;
+    @extend %color1;
+}
+
+.warning {
+    @extend %font-size;
+    @extend %color2;
+}
