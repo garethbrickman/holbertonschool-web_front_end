@@ -1,0 +1,8 @@
+/* uses nested declarations */
+
+button {
+    color: #ff0000;
+   &:hover {
+        color: #00FF00
+    }
+}
