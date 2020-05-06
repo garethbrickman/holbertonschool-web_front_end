@@ -573,26 +573,9 @@
       width: 100%;
     }
 
-    .post-content p:first-child {
-      font-size: var(--font-size-x-large);
-    }
-
-    .post-content .img-caption {
-      margin: 1rem 0;
-      padding: 0 0.5rem;
-      font-size: var(--font-size-small);
-      color: var(--color-grey);
-      text-align: center;
-    }
-
     .post-aside {
       order: -1;
       min-width: 20%;
-    }
-
-    .post img {
-     width: 100%;
-     height: auto; 
     }
 
     /* Post Meta
@@ -638,4 +621,21 @@
 
     .tag-list li:last-child::after {
       content: "";
+    }
+
+    .post img {
+      width: 100%;
+      height: auto; 
+     }
+
+    .post-content p:first-child {
+      font-size: var(--font-size-x-large);
+    }
+
+    .post-content .img-caption {
+      margin: 1rem 0;
+      padding: 0 .5rem;
+      font-size: var(--font-size-small);
+      color: var(--color-grey);
+      text-align: center;
     }
