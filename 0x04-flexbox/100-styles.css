@@ -573,7 +573,7 @@
       width: 100%;
     }
 
-    .post-content:first-child {
+    .post-content p:first-child {
       font-size: var(--font-size-x-large);
     }
 
