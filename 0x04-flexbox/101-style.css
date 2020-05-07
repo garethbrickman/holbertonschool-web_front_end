@@ -18,35 +18,35 @@
 
 .box3 {
     font-size: 2rem;
-    background-color: midnightblue;
+    background-color: #393395;
     height: 160px;
     width: 310px;
 }
 
 .box2 {
     font-size: 1rem;
-    background-color: steelblue;
+    background-color: #1A7EA2;
     height: 100px;
     width: 180px;
 }
 
 .box4 {
     font-size: 1rem;
-    background-color: purple;
+    background-color: #3F1AA4;
     height: 100px;
     width: 180px;
 }
 
 .box1 {
     font-size: 0.5rem;
-    background-color: limegreen;
+    background-color: #1AA468;
     height: 60px;
     width: 100px;
 }
 
 .box5 {
     font-size: 0.5rem;
-    background-color: peru;
+    background-color: #EC7D1C;
     height: 60px;
     width: 100px;
 }
