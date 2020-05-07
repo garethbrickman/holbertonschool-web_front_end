@@ -1,0 +1,52 @@
+:root {
+    font-size: 56px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    font-size: 2rem;
+    background-color: midnightblue;
+    height: 160px;
+    width: 310px;
+}
+
+.box2 {
+    font-size: 1rem;
+    background-color: steelblue;
+    height: 100px;
+    width: 180px;
+}
+
+.box4 {
+    font-size: 1rem;
+    background-color: purple;
+    height: 100px;
+    width: 180px;
+}
+
+.box1 {
+    font-size: 0.5rem;
+    background-color: limegreen;
+    height: 60px;
+    width: 100px;
+}
+
+.box5 {
+    font-size: 0.5rem;
+    background-color: peru;
+    height: 60px;
+    width: 100px;
+}
