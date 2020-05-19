@@ -516,62 +516,61 @@
   /* Section HERO
       ============================= */
   
-  .section-hero {
-    position: relative;
-    margin-top: -8.5rem;
-  }
-  
-  .hero-homepage {
-    background-image: url(images/banner-home.jpg);
-    background-position: 65% 8rem;
-    background-repeat: no-repeat;
-    background-size: 90rem auto;
-  }
-  
-  .section-hero .section-body {
-    padding: 10rem 4rem;
-  }
-  
-  .section-hero .section-category {
-    color: var(--color-white);
-    text-transform: uppercase;
-  }
-  
-  .section-hero .section-title {
-    margin-bottom: 5rem;
-  }
-  
-  .section-hero .section-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    min-height: 35vh;
-  }
-  /* Section Latest news
-      ============================= */
-  
-  .section-latest-news .row {
-    flex-direction: row-reverse;
-  }
-
-  @media screen and (max-width: 767px) {
-    .section-latest-news .row {
-      flex-direction: column;
+      .section-hero {
+        position: relative;
+        margin-top: -8.5rem;
+      }
+      
+      .hero-homepage {
+        background-image: url(images/banner-home.jpg);
+        background-position: 65% 8rem;
+        background-repeat: no-repeat;
+        background-size: 90rem auto;
+      }
+      
+      .section-hero .section-body {
+        padding: 10rem 4rem;
+      }
+      
+      .section-hero .section-category {
+        color: var(--color-white);
+        text-transform: uppercase;
+      }
+      
+      .section-hero .section-title {
+        margin-bottom: 5rem;
+      }
+      
+      .section-hero .section-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 35vh;
+      }
+    
+      @media screen and (max-width: 767px) {
+    
+      .section-hero {
+        margin: -0.1rem 0;
+      }
+    
+      .hero-homepage {
+        background-position: 85% 0;
+      }
+    
+      .section-hero .section-body {
+        padding: 2rem;
+      }
     }
-
-    .section-hero {
-      margin: -0.1rem 0;
-    }
-
-    .hero-homepage {
-      background-position: 85% 0;
-    }
-
-    .section-hero .section-body {
-      padding: 2rem;
-    }
-  }
+      /* Section Latest news
+          ============================= */
+    
+      @media screen and (max-width: 767px) {
+        .section-latest-news .row {
+          flex-direction: column;
+        }
+      }
   
   /* Section SERVICES
       ============================= */
