@@ -823,6 +823,21 @@
     color: var(--color-grey);
     text-align: center;
   }
+
+  .post {
+    margin: 0 2rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    .post {
+      flex-direction: column;
+      margin: 2rem;
+    }
+
+    .post-content {
+      padding-left: 0;
+    }
+  }
   
   /* Post Meta
       ============================= */
@@ -884,6 +899,14 @@
   
   .post-comments .section-title {
     font-variant: small-caps;
+  }
+
+  @media screen and (max-width: 767px) {
+    .post-comment {
+      width: calc(100% - 4rem);
+      margin: 2rem;
+      padding: 0;
+    }
   }
   
   /* Basic form
