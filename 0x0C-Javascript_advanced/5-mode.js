@@ -1,3 +1,5 @@
+// test using https://jsfiddle.net/
+
 function changeMode(size, weight, transform, background, color) {
 	document.documentElement.style["font-size"] = size;
 	document.documentElement.style["font-weight"] = weight;
