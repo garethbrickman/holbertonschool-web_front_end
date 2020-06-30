@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-    <!-- HEAD -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, 
     initial-scale=1.0, viewport-fit=cover">
     <title>Title</title>
     <script type="application/javascript">
         function setCookies() {
-            let fname = document.getElementByID("firstname").value;
+            let fname = document.getElementById("firstname").value;
+            document.cookie = "firstname=" + fname + ";";
             let email = document.getElementById("email").value;
-            document.cookie = "Firstname=" + fname;
-            document.cookie = "email" + email;
+            document.cookie = "email=" + email + ";";
         }
 
         function showCookies() {
