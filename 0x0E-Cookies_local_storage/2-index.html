@@ -8,18 +8,37 @@
     <title>Title</title>
     <script type="application/javascript">
         function setCookies() {
-            let fname = document.getElementByID("firstname").value;
+            // 10 days = 240 Hrs = 240*60*60 = 864000
+            let expires = " max-age=864000; path=/";
+            let fname = document.getElementById('firstname').value;
+            document.cookie = "firstname=" + fname + ";" + expires;
             let email = document.getElementById("email").value;
-            document.cookie = "Firstname=" + fname;
-            document.cookie = "email" + email;
+            document.cookie = "email=" + email + ";" + expires;
         }
 
         function showCookies() {
-            let cookie = document.cookie;
+            let fname = getCookie('firstname');
+            let em = getCookie('email');
             let body = document.body;
-            let paragraph = document.createElement("P");
-            paragraph.appendChild(document.createTextNode("Cookies: " + cookie));
+            let paragraph = document.createElement('P');
+            paragraph.appendChild(document.createTextNode("Email: " + em + " - Firstname: " + fname));
             body.appendChild(paragraph);
+        }
+
+        function getCookie(name) {
+            let cookieName = name + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
         }
     </script>
 </head>
