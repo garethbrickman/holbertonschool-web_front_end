@@ -21,12 +21,12 @@
                 let $row = $ ( "<tr><td>" + firstName + "</td><td>" + lastName + "</td><td>(x)</td></tr>");
                 $( "body" ).find( "tbody" ).first().append( $row );
                 // (x) checkbox removes row onclick
-                let checkbox = $("tbody").find("tr").last();
-                checkbox.find("td").click(function () {
+                let checkbox = $( "tbody" ).find( "tr" ).last();
+                checkbox.find( "td" ).click(function () {
                     checkbox.remove();
                 });
-                checkbox.find("td").last().css("background-color", "orange");
-            }
+                checkbox.find( "td" ).last().css( "background-color", "orange" );
+            };
             createFamilyTree();
             addNewMember("Guillaume","Salva");
             addNewMember("Arielle","Snizt");
