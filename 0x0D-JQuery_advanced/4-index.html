@@ -9,16 +9,22 @@
         crossorigin="anonymous"></script>
         
         <script> type="application/javascript"
-        function createFamilyTree () {
-             $( "body" ).append( "<table>" ),
-                $( "table" ).append( "<tr>" ),
-                $( "tr" ).append( "<th>" ),
-                $( "th" ).append( "Firstname" ),
-                $( "tr" ).append( "<th>" ),
-                $( "th" ).append( "Lastname" );
-        };
         $(function () {
+            function createFamilyTree () {
+                $( "body" ).append( "<table>" ),
+                    $( "table" ).append( "<tr>" ),
+                    $( "tr" ).append( "<th>" ),
+                    $( "th" ).append( "Firstname" ),
+                    $( "tr" ).append( "<th>" ),
+                    $( "th" ).append( "Lastname" );
+            };
+
+            function replaceFamilyTree () {
+                $("tbody").html("<tr><td>Gerard</td><td>Bonissa</td></tr>");
+            }
+            
             createFamilyTree();
+            replaceFamilyTree();
         });
         </script>
     </head>
