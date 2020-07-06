@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, 
     initial-scale=1.0, viewport-fit=cover">
     <title>Title</title>
-    <script type="application/javascript">
+    <script 
+    src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"
+    type="application/javascript">
         function setCookies() {
             let fname = document.getElementByID("firstname").value;
             let email = document.getElementById("email").value;
@@ -21,6 +23,10 @@
             paragraph.appendChild(document.createTextNode("Cookies: " + cookie));
             body.appendChild(paragraph);
         }
+
+        function deleteCookiesAndShowForm() {}
+        function showWelcomeMessageOrForm() {}
+
     </script>
 </head>
 <body>
